@@ -1,6 +1,6 @@
 package car
 
-import "github.com/aaron-min/ustart_tutorial/customer/storage"
+import "github.com/aaron-min/ustart_tutorial/car/storage"
 
 // Config determines the runtime behavior of the Elastic-backed customer server
 type Config struct {

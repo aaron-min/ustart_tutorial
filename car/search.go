@@ -1,14 +1,13 @@
-package customer
+package car
 
 import (
 	"context"
 
 	"github.com/aaron-min/ustart_tutorial/car/carpb"
-	"github.com/aaron-min/ustart_tutorial/customer/customerpb"
 )
 
 // Search retreives a list of minimal customer data based off search queries
-func (car *Car) Search(ctx context.Context, req *customerpb.SearchRequest) (*customerpb.SearchResponse, error) {
+func (car *Car) Search(ctx context.Context, req *carpb.SearchRequest) (*carpb.SearchResponse, error) {
 
 	queryArr := []string{req.FirstName, req.LastName, req.DOB}
 	// filterArr := strings.FieldsFunc(req.Filters, split)
