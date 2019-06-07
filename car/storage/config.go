@@ -1,5 +1,9 @@
 package storage
 
+import (
+	elasticstore "github.com/aaron-min/ustart_tutorial/customer/storage/elastic"
+)
+
 // Config determines the runtime behavior of the an either SQL or ElasticSearch backed customer server
 type Config struct {
 	useDummy      bool
