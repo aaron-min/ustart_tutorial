@@ -21,5 +21,5 @@ func New(cfg *Config) (*Car, error) {
 		strg: storg,
 	}
 
-	return cust, err
+	return car, err
 }

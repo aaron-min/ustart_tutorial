@@ -15,6 +15,9 @@ func (estor *ElasticStore) Search(ctx context.Context, searchTerms []string, sea
 		if searchName {
 			query = query.Should(elastic.NewFuzzyQuery("Make", term).Fuzziness("AUTO"))
 			query = query.Should(elastic.NewFuzzyQuery("Model", term).Fuzziness("AUTO"))
+			query = query.Should(elastic.NewFuzzyQuery("Year", term).Fuzziness("AUTO"))
+			query = query.Should(elastic.NewFuzzyQuery("Color", term).Fuzziness("AUTO"))
+			query = query.Should(elastic.NewFuzzyQuery("Class", term).Fuzziness("AUTO"))
 		}
 	}
 
