@@ -6,7 +6,7 @@ import "models.proto";
 
 option go_package= "carpb";
 
-service Customer {
+service Car {
   rpc Register(RegisterRequest) returns (RegisterResponse);
   rpc Search(SearchRequest) returns (SearchResponse);
   rpc ToggleAvailable(ToggleRequest) returns (ToggleResponse);
